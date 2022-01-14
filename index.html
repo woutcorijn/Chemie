@@ -1,0 +1,39 @@
+<head>
+<title>Chemie score</title>
+<style ></style>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+  <h1>Chemie score calculator</h1>
+  <table>
+    <tr>
+    <td>Score partieel: </td>
+    <td><input type="number" id="Partieel"></input></td>
+    <td>/20</td>
+    </tr>
+    <tr>
+    <td>Score organisch: </td>
+    <td><input type="number" id="Organisch"></input></td>
+    <td>/35</td>
+    </tr>
+    <tr>
+    <td>Score anorganisch: </td>
+    <td><input type="number" id="Anorganisch"></input></td>
+    <td>/20</td>
+    </tr>
+    <tr>
+    <td>Score labo: </td>
+    <td><input type="number" id="Labo"></input></td>
+    <td>/20</td>
+    </tr>
+  </table>
+  <br>
+  <button id="submit" onclick="Calculate()" type="button">Calculate</button>
+  <p id="Result">Score: 0.00 /20</p>
+  <br>
+  <a target="_blank"href="formule.png"><img id="formule" src="formule.png"></img></a>
+  <br>
+  <p>Disclaimer: De formule is gebaseerd op de informatie die te vinden is op de ECTS fische.<br>Dit is dus een vrij opgestelde formule.</p>
+  <a target="_blank" href="https://onderwijsaanbod.kuleuven.be//2021/syllabi/n/JPI0UUN.htm">ECTS fische</a>
+</body>
+<script src="script.js"></script>
